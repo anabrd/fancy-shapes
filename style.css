@@ -1,0 +1,183 @@
+body {
+    color: #000080;
+    text-align: center;
+    font-family: 'Roboto';
+    background-image: linear-gradient(#dbbcbc, #e2dcdc);
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 3%;
+}
+
+h1 {
+    background-color: navy;
+    color: white;
+    font-size: 3.5rem;
+    margin: 0;
+    padding: 5% 0 0 0;
+}
+
+div {
+    margin-top: 4%;
+}
+
+.wave {
+    position: absolute;
+    z-index: -10;
+    width: 100%;
+    left: 0;
+    margin-top: 20px;
+}
+
+h1, h2 {
+    font-family: 'Poppins',
+    sans-serif;
+    font-weight: 700;
+    display: block;
+    width: 100%;
+}
+
+.beforeafter {
+    margin-top: 10%;
+}
+
+.card1::before,
+.card2::before {
+    background-color: #db9494;
+    width: 200px;
+    height: 50px;
+    display: block;
+    content: '';
+    display: block;
+    border-left: 20px solid navy;
+}
+
+.card1::after {
+    content: url("http://placekitten.com/220/300")
+}
+
+.card2::after {
+    content: url("http://placekitten.com/220/300");
+    background-color: #db9494;
+    width: 200px;
+    height: 50px;
+    display: block;
+    content: '';
+    border-right: 20px solid navy;
+        display: block;
+}
+
+.container1 > img {
+    clip-path: inset(20px 50px 25px 50px round 10px 10px);
+}
+
+.container2 > img {
+    clip-path: circle(80px at 100px 100px);
+}
+
+.container3>img {
+    clip-path: ellipse(90px 50px at 100px 100px);
+}
+
+.container4 >img {
+    clip-path: polygon(50% 0, 100% 100%, 0% 100%);
+}
+
+.container5 > img {
+    clip-path: polygon(50% 0%, 85% 15%, 100% 50%, 85% 85%, 50% 100%, 15% 85%, 0% 50%, 15% 15%);
+}
+
+.shape {
+    width: 200px;
+    height: 200px;
+    background-image: url("http://placekitten.com/200/200");
+    border-radius: 15px;
+    line-height: 200px;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 1.5rem;
+    margin: 15px;
+}
+
+.translate:hover {
+    transform: translate(50px, 50px)
+}
+
+.rotate:hover {
+    transform: rotate3d(1, 1, 0, 40deg)
+}
+
+.skew:hover {
+    transform: skewX(-20deg);
+}
+
+.scale:hover {
+    transform: scale(1.5, 1.5)
+}
+
+.transition {
+    height: 200px;
+    width: 200px;
+    background-color: navy;
+    border-radius: 15px;
+    margin: 15px;
+    display: inline-block;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 1.5rem;
+}
+
+.one:hover {
+    transition: 2s;
+    width: 300px;
+    height: 300px;
+    background-color: salmon;
+}
+
+.two {
+    transition: 2s;
+    transition-timing-function: ease-in-out;
+}
+
+.two:hover {
+    width: 300px;
+    height: 300px;
+}
+
+
+input {
+    border: none;
+    width: 50%;
+    margin: 2% auto;
+    height: 30px;
+    font-family: 'Poppins';
+    color: navy;
+    padding: 10px;
+    border-radius: 8px;
+    display: block;
+}
+
+input::placeholder {
+    color: rgb(250, 188, 182);
+}
+
+input:focus {
+    transition: 0.1s;
+    transition-timing-function: ease-in-out;
+    border:salmon 3px solid;
+    outline:none;
+}
+
+label {
+    font-family: 'Poppins';
+    display: block;
+    width: 80%;
+    margin: auto;
+}

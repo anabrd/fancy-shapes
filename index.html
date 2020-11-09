@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="#000080" fill-opacity="1" d="M0,192L80,181.3C160,171,320,149,480,165.3C640,181,800,235,960,240C1120,245,1280,203,1360,181.3L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+</svg>
+    <h1>Fancy Shapes</h1>
+
+        <!-- BEFORE AND AFTER -->
+
+        <section class="beforeafter">
+        <h2>::before and ::after</h2>
+        <div class="card1">
+            <h4>My First Card Content</h4>
+        </div>
+
+        <div class="card2">
+            <h4>My Second Card Content</h4>
+        </div>
+        </section>
+
+
+        <!-- CLIP PATH -->
+
+        <h2>Clip path</h2>
+
+        <section>
+        <div class="container1">
+            <img src="http://placekitten.com/300/200" alt="">
+        </div>
+
+        <div class="container2">
+            <img src="http://placekitten.com/300/200" alt="">
+        </div>
+
+        <div class="container3">
+            <img src="http://placekitten.com/300/200" alt="">
+        </div>
+
+        <div class="container4">
+            <img src="http://placekitten.com/300/300" alt="">
+        </div>
+
+        <div class="container5">
+            <img src="http://placekitten.com/300/300" alt="">
+        </div>
+
+            <svg>
+                <defs>
+                    <pattern id="img" x="0" y="0" width="1" height="1">
+                        <image width="300" height="200" xlink:href="http://placekitten.com/300/200" />
+                    </pattern>
+                </defs>
+                <path fill="url(#img)" d="M15,45 A30,30,0,0,1,75,45 A30,30,0,0,1,135,45 Q135,90,75,130 Q15,90,15,45 Z">
+                </path>
+            </svg>
+            </section>
+
+
+            <!-- TRANSITION -->
+
+            <h2>Transition</h2>
+
+            <div class="transition one">One</div>
+
+            <div class="transition two">Two</div>
+
+            <!-- TRANSFORM -->
+
+            <h2>Transform</h2>
+            <h3>(Hover over the elements to see the effect.)</h3>
+
+            <section id="transform">
+
+                <div class="shape translate">
+                    translate
+                </div>
+
+                <div class="shape rotate">
+                    rotate
+                </div>
+
+                <div class="shape skew">
+                    skew
+                </div>
+
+                <div class="shape scale">
+                    scale
+                </div>
+
+                <h2>Transform with Input</h2>
+
+                <label for="input">Try it out:</label>
+                <input id="input" type="text" placeholder="Type here!">
+
+            </section>
+
+
+</body>
+
+</html>
